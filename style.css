@@ -115,8 +115,8 @@ li > label {
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
-  width: 226px
+li > input[type="text"] {
+  width: 226px;
 }
 button.delete img {
   height: 2em;
@@ -135,12 +135,12 @@ ul#completed-tasks label {
 
 /* Edit Task */
 ul li input[type=text] {
-  display:none
+  display:none;
 }
 
 ul li.editMode input[type=text] {
   display:inline-block;
-  width:224px
+  width:224px;
 }
 
 ul li.editMode label {
