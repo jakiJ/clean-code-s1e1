@@ -16,8 +16,8 @@
       <section class="create-element">
         <h3 class="todo-app_title create-title">Add Item</h3>
         <div class="create-element_wrapper">
-          <input id="new-task" class="create-element_input text-input" type="text">
-          <button class="todo-btn">Add</button>
+          <input id="new-task" class="create-element_input text-input task" type="text">
+          <button class="todo-btn add-btn">Add</button>
         </div>
       </section>
 
@@ -25,7 +25,7 @@
         <ul id="incomplete-tasks" class="tasks-list">
           <li class="list-element">
             <input type="checkbox" class="input_type_checkbox">
-            <label class="list-element_title">Pay Bills</label>
+            <label class="list-element_title task">Pay Bills</label>
             <input type="text" class="text-input">
             <button class="edit-btn todo-btn">Edit</button>
             <button class="delete-btn todo-btn">
@@ -34,8 +34,8 @@
           </li>
           <li class="edit-mode list-element">
             <input type="checkbox" class="input_type_checkbox">
-            <label class="list-element_title">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="text-input">
+            <label class="list-element_title task">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="text-input task">
             <button class="edit-btn todo-btn">Save</button>
             <button class="delete-btn todo-btn">
               <img src="./remove.svg" alt="Remove arrow" class="delete-btn_image">
@@ -47,8 +47,8 @@
         <ul id="completed-tasks" class="tasks-list">
           <li class="list-element complited-element">
             <input type="checkbox" class="input_type_checkbox" checked>
-            <label class="completed-task_label">See the Doctor</label>
-            <input type="text" class="text-input">
+            <label class="list-element_title task">See the Doctor</label>
+            <input type="text" class="text-input task">
             <button class="edit-btn todo-btn">Edit</button>
             <button class="delete-btn todo-btn">
               <img src="./remove.svg" alt="Remove arrow" class="delete-btn_image">
