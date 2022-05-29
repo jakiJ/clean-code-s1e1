@@ -28,11 +28,11 @@ button {
   text-align: right;
 }
 
-.description-matrix img {
+.description-matrix .description-matrix_image {
   width: 100%;
 }
 
-.description-matrix .more_inf {
+.description-matrix .description-matrix_link {
   font-family: fantasy, cursive;
 }
 
@@ -43,20 +43,16 @@ button {
   }
 
 }
-.centered-main-page-element {
+.todo-app-container {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.text-input {
   width: 56%;
   display: inline-block;
   flex-grow: 1
-}
-
-.task-row-wrapper {
-  display: flex;
 }
 
 .todo-btn {
@@ -75,8 +71,7 @@ button {
 
 /* Heading */
 
-.title,
-label[for="new-task"] {
+.todo-app_title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -86,7 +81,7 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.text-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -99,28 +94,31 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.text-input:focus {
   color: #333;
 }
 
 /* New Task */
 
-label[for="new-task"] {
+.create-element .create-title {
   display: block;
   margin: 0 0 20px;
 }
 
-input#new-task {
+.create-element_wrapper {
+  display: flex;
+}
+
+.create-element_input {
   width: 318px;
 }
 
 /* Task list */
 
-.list-element {
+li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,18 +128,18 @@ input#new-task {
   vertical-align: middle;
 }
 
-.list-element > input[type="checkbox"] {
+.input_type_checkbox {
   margin: 0 10px;
 }
 
-.list-element > label {
+.list-element_title {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-element > input[type="text"] {
+.list-element .text-input {
   width: 226px;
 }
 
@@ -156,21 +154,21 @@ input#new-task {
 }
 
 /* Completed */
-ul#completed-tasks .completed-task_label {
+#completed-tasks .completed-task_label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.tasks-list .list-element .text-input {
   display: none;
 }
 
-ul .editMode input[type=text] {
+.tasks-list .edit-mode .text-input {
   display: inline-block;
   width: 224px;
 }
 
-ul .editMode label {
+.tasks-list .edit-mode label {
   display: none;
 }
